@@ -8,6 +8,7 @@
 			"email": "steven_bauman@outlook.com"
 		}
 	],
+    "license": "MIT",
 	"repositories": [
 		{
 			"type": "composer",
