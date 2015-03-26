@@ -69,7 +69,7 @@ class LogController extends AdminController
 
         $transformer = function($element)
         {
-            $element['level'] = $this->levelToLabel($element['levelOblivio']);
+            $element['level'] = $this->levelToLabel($element['level']);
             $element['show_url'] = route('admin.logs.show', array($element['id']));
             $element['header'] = str_limit($element['header']);
 
