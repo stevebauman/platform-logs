@@ -1,5 +1,5 @@
 {
-	"name": "stevebauman/logs",
+	"name": "stevebauman/platform-logs",
 	"type": "platform-extension",
 	"description": "A site log manager",
 	"authors": [
