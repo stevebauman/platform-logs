@@ -1,0 +1,35 @@
+{
+	"name": "stevebauman/logs",
+	"type": "platform-extension",
+	"description": "A site log manager",
+	"authors": [
+		{
+			"name": "Steve Bauman",
+			"email": "steven_bauman@outlook.com"
+		}
+	],
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "http://packages.cartalyst.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"cartalyst/composer-installers": "1.2.*",
+		"illuminate/support": "4.* | 5.*",
+		"platform/foundation": "1.0.*",
+        "stevebauman/log-reader": "1.0.*"
+	},
+	"autoload": {
+		"classmap": [
+			"database/migrations",
+			"database/seeds"
+		],
+		"psr-4": {
+			"Stevebauman\\Logs\\": "src/"
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
