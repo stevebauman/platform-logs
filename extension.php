@@ -218,7 +218,31 @@ return [
 
 	'permissions' => function(Permissions $permissions)
 	{
+        $permissions->group('logs', function($g)
+        {
+            $g->name = 'Logs';
 
+            $g->permission('logs.index', function($p)
+            {
+                $p->label = 'View Log Entries';
+
+                $p->controller('Stevebauman\Logs\Controllers\Admin\LogController', 'index, grid');
+            });
+
+            $g->permission('logs.read', function($p)
+            {
+                $p->label = 'Mark log entries as read';
+
+                $p->controller('Stevebauman\Logs\Controllers\Admin\LogController', 'read');
+            });
+
+            $g->permission('logs.delete', function($p)
+            {
+                $p->label = 'Delete log entries';
+
+                $p->controller('Stevebauman\Logs\Controllers\Admin\LogController', 'delete');
+            });
+        });
 	},
 
 	/*
