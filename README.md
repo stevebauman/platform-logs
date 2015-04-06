@@ -11,7 +11,7 @@ Add platform-logs to your composer.json:
 
     "stevebauman/platform-logs": "1.0.*"
 
-Then run `composer update` on your project root
+Then run `composer update` on your project root.
 
 Install platform-logs in the Extensions view inside the Operations menu, then enable it.
 
