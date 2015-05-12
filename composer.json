@@ -22,7 +22,7 @@
 		"platform/foundation": "1.* | 2.*",
         "stevebauman/log-reader": "1.0.*"
 	},
-    "archive": ["screenshots"]
+    "archive": ["screenshots"],
 	"autoload": {
 		"psr-4": {
 			"Stevebauman\\Logs\\": "src/"
